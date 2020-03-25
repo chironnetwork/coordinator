@@ -24,7 +24,6 @@ node_list = {}
 
 port = int(getenv('PORT', str(5000)))
 
-# ipfs_api = '/ip4/127.0.0.1/tcp/5001/http'
 ipfs_api = '/dns/ipfs.infura.io/tcp/5001/https'
 client = ipfshttpclient.connect(ipfs_api)
 print(f"Connected to IPFS v{client.version()['Version']}")
