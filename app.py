@@ -3,6 +3,7 @@
 from os import getenv, path, makedirs
 from random import choice
 import datetime
+import logging
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import FileStorage
